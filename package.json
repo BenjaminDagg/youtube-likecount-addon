@@ -1,0 +1,20 @@
+{
+  "name": "youtube-addon",
+  "version": "1.0.0",
+  "description": "displays likes and dislikes on youtube videos",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server",
+    "start": "node server.js"
+  },
+  "author": "Ben Dagg",
+  "license": "ISC"
+}
