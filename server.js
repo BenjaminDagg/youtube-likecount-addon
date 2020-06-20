@@ -26,7 +26,7 @@ app.use( express.static( __dirname + `/build` ) );
 
     var id = req.params.id;
     var key = 'AIzaSyDf8XHWuaQErkeZG7mUex59BDW7tHyWoUM';
-    //var data = await axios.get('https://www.googleapis.com/youtube/v3/videos?part=statistics&id=pUZE7cqxviA&key=AIzaSyDaFaHT1cF3mHHLgwZoicvlvJCfv5FKKZo');
+    
     var data = await axios.get('https://www.googleapis.com/youtube/v3/videos?part=statistics&id=' + id + '&key=' + key);
     console.log(data);
     return res.json({data:data.data});
